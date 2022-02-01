@@ -1,0 +1,91 @@
+* {
+    text-align: center;
+}
+
+body {
+    font-size: 25pt;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header {
+    background-color: rgba(28, 90, 224, 0.705);
+    height: 30vh;
+    line-height: 30vh;
+}
+
+.feat {
+    flex: 1;
+    flex-basis: 32%;
+    height: 32vw;
+    line-height: 32vw;
+}
+
+.feat1 {
+    background-color: rgba(255, 166, 0, 0.63);
+}
+
+.feat2 {
+    background-color: rgba(196, 21, 172, 0.562);
+}
+
+.feat3 {
+    background-color: rgba(196, 21, 21, 0.562);
+}
+
+.sign {
+    background-color: rgba(21, 103, 196, 0.562);
+    flex: 1;
+    height: 20vh;
+    line-height: 20vh;
+}
+
+.feature-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    background-color: rgba(128, 128, 128, 0.74);
+    height: 60vh;
+    line-height: 60vh;
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        order: -2;
+    }
+    .content {
+        order: -1;
+    }
+    .feat {
+        flex-basis: 50%;
+        height: 50vw;
+        line-height: 50vw;
+    }
+    .sign {
+        flex-basis: 50%;
+        height: 50vw;
+        line-height: 50vw;
+        order: -1;
+    }
+    .feat2 {
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .feature-container {
+        flex-direction: column;
+    }
+}
